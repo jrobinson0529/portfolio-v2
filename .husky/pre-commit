@@ -3,3 +3,5 @@
 
 npm test
 yarn format
+git add -A
+echo "$(tput setaf 2)Wake up....."

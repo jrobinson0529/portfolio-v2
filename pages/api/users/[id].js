@@ -10,7 +10,7 @@ export default function handler(req, res) {
   const user = users.find((user) => user.id === parseInt(id));
 
   if (!user) {
-         return res.status(404).json({
+    return res.status(404).json({
       status: 404,
       message: "Not Found",
     });
