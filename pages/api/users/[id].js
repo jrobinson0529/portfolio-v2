@@ -1,9 +1,11 @@
+/* eslint-disable import/no-anonymous-default-export */
+
 const users = [
   { id: 1, name: "John Smith" },
   { id: 2, name: "Jane Doe" },
 ];
 
-export default function handler(req, res) {
+export default (req, res) => {
   const {
     query: { id },
   } = req;
@@ -17,4 +19,4 @@ export default function handler(req, res) {
   }
 
   res.json({ ...user });
-}
+};
