@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "lintp": "prettier --check .",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "12.1.5",
@@ -15,6 +19,8 @@
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "husky": "^7.0.0",
+    "prettier": "^2.6.2"
   }
 }
