@@ -7,15 +7,16 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Jesse Robinson | Home</title>
-        <meta name="description" content="Jesse Robinson's digital resume and portfolio" />
+        <meta
+          name="description"
+          content="Jesse Robinson's digital resume and portfolio"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {Array.from(Array(1000).keys()).map((n) => (
         <h1 key={n + 1}>HELLO WORLD!</h1>
       ))}
-      <p>
-        ..........goodbye
-      </p>
+      <p>..........goodbye</p>
     </div>
   );
 }
